@@ -1,0 +1,23 @@
+{
+  "name": "simple-pubsub",
+  "version": "1.0.0",
+  "description": "A simple Publish-Subscribe system for managing machine stock levels",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.7.3",
+    "ts-node-dev": "^2.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
