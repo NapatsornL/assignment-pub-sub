@@ -1,17 +1,16 @@
 //interface
 interface IEvent{
     type() : string;
-    machineID() : string; // ()แปลว่าไร
+    machineID() : string; 
 }
 
 interface ISubscriber{
-    handle(event: IEvent) : void; // handle - คืออะไร
+    handle(event: IEvent) : void; 
 }
 
 interface IPublishSubscribeService{
     publish (event: IEvent) : void;
     subscribe(type: string, handler: ISubscriber) : void;
-    //unsubscribe (/question 2 - build this features)
     unsubscribe(type: string, handler: ISubscriber): void;
 
 }
@@ -21,15 +20,15 @@ class MachineSaleEvent implements IEvent{
     constructor(private readonly _sold: number, private readonly _machineId: string){} // private readonly คือ
 
     machineID(): string {
-        return this._machineId //มาจาก constructor
+        return this._machineId 
     }
 
     getSoldQuantity(): number{
-        return this._sold //มาจาก constructor
+        return this._sold 
     }
 
     type(): string{
-        return 'sale'; //บอกว่า event ไหน
+        return 'sale'; 
     }
 }
 
@@ -40,13 +39,11 @@ class MachineRefillEvent implements IEvent{
         return this._machineId
     }
     getRefillQuantity(): number{
-        return this._refill //มาจาก constructor
+        return this._refill 
     }
     type(): string {
         return 'refill';
     }
-
-    //add ว่า ถ้า level ของ stock น้อยกว่า 3 ให้เพิ่มสต็อค
 }
 
 class LowStockWarningEvent implements IEvent {

@@ -42,13 +42,13 @@ var MachineSaleEvent = /** @class */ (function () {
         this._machineId = _machineId;
     } // private readonly คือ
     MachineSaleEvent.prototype.machineID = function () {
-        return this._machineId; //มาจาก constructor
+        return this._machineId;
     };
     MachineSaleEvent.prototype.getSoldQuantity = function () {
-        return this._sold; //มาจาก constructor
+        return this._sold;
     };
     MachineSaleEvent.prototype.type = function () {
-        return 'sale'; //บอกว่า event ไหน
+        return 'sale';
     };
     return MachineSaleEvent;
 }());
@@ -61,7 +61,7 @@ var MachineRefillEvent = /** @class */ (function () {
         return this._machineId;
     };
     MachineRefillEvent.prototype.getRefillQuantity = function () {
-        return this._refill; //มาจาก constructor
+        return this._refill;
     };
     MachineRefillEvent.prototype.type = function () {
         return 'refill';
