@@ -1,0 +1,59 @@
+/* ---------- EditDiscount.css ---------- */
+.center-screen {
+    min-height: 100vh;            /* เต็มหน้าจอ */
+    display: flex;
+    align-items: center;          /* จัดกลางแนวตั้ง */
+    justify-content: center;      /* จัดกลางแนวนอน */
+    background: #f3f4f6;          /* เทาอ่อน */
+  }
+  
+  .edit-card {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .field {
+    margin-bottom: 1rem;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  
+  .field input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  
+  .save-btn {
+    width: 100%;
+    padding: 10px;
+    background: #10b981;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .25s;
+  }
+  
+  .save-btn:hover {
+    background: #0ea672;
+  }
+  

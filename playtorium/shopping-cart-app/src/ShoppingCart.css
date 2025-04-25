@@ -1,0 +1,164 @@
+.shopping-cart-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9fafb;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.shopping-cart-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #374151;
+}
+
+.shopping-cart-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-field {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+  outline: none;
+}
+
+.add-item-button {
+  background-color: #10b981;
+  color: white;
+  font-weight: bold;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-item-button:hover {
+  background-color: #059669;
+}
+
+.shopping-cart-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 32px;
+}
+
+.shopping-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.shopping-cart-item > .item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.item-category {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.remove-item-button {
+  background-color: #ef4444;
+  color: white;
+  font-weight: bold;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-item-button:hover {
+  background-color: #dc2626;
+}
+
+.shopping-cart-total {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #374151;
+}
+
+.shopping-cart-coupon {
+  margin-top: 48px;
+}
+
+.shopping-cart-coupon h4 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+button:not(:disabled):hover {
+  filter: brightness(90%);
+}
+
+.discount-summary {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.discount-summary ul {
+  margin-top: 10px;
+  color: #4b5563;
+}
+
+.discount-summary h4 {
+  font-size: 1.2rem;
+  color: #374151;
+}
+
+.reset-button {
+  background-color: #f97316;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-top: 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #ea580c;
+}
